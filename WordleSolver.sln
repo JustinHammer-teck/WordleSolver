@@ -1,0 +1,44 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolver.Api", "src\WordleSolver.Api\WordleSolver.Api.csproj", "{9C5B9B00-8330-471B-ACED-E6E5676B1134}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B78B2225-422E-42A0-8BED-BE30685E5C1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F4831E7E-9286-4064-A472-A654D78D37F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolver.Application.Test", "tests\WordleSolver.Application.Test\WordleSolver.Application.Test.csproj", "{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolver.Application", "src\WordleSolver.Application\WordleSolver.Application.csproj", "{06A4CF5F-4296-45D5-B82E-84FE1D2957B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolver.Domain", "src\WordleSolver.Domain\WordleSolver.Domain.csproj", "{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C5B9B00-8330-471B-ACED-E6E5676B1134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5B9B00-8330-471B-ACED-E6E5676B1134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5B9B00-8330-471B-ACED-E6E5676B1134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5B9B00-8330-471B-ACED-E6E5676B1134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A4CF5F-4296-45D5-B82E-84FE1D2957B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A4CF5F-4296-45D5-B82E-84FE1D2957B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A4CF5F-4296-45D5-B82E-84FE1D2957B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A4CF5F-4296-45D5-B82E-84FE1D2957B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C5B9B00-8330-471B-ACED-E6E5676B1134} = {B78B2225-422E-42A0-8BED-BE30685E5C1D}
+		{B0E5A535-80C1-4D91-86E2-CF4C1CE60F3A} = {F4831E7E-9286-4064-A472-A654D78D37F8}
+		{06A4CF5F-4296-45D5-B82E-84FE1D2957B2} = {B78B2225-422E-42A0-8BED-BE30685E5C1D}
+		{47BC9C3A-44B1-4DF4-B778-22D3DBE5FF4C} = {B78B2225-422E-42A0-8BED-BE30685E5C1D}
+	EndGlobalSection
+EndGlobal
