@@ -1,15 +1,14 @@
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using WordleSolver.Application.Solver;
 
 namespace WordleSolver.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class WordleSolverController : ControllerBase
+public class WordleSolverController : BaseController
 {
     [HttpPost]
-    public IActionResult SolverHandler()
+    public async Task<IActionResult> SolverHandler()
     {
-        return Ok();
+        var result = await Mediator.Send(new SolverRequest());
+        return Ok(result);
     }
 }
