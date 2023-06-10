@@ -1,6 +1,8 @@
+using WordleSolver.Domain.Enums;
+
 namespace WordleSolver.Domain.Models;
 
 public record WordFrame(
     string Guesses,
-    char[] Correctness);
+    IEnumerable<LetterState> Correctness);
     
