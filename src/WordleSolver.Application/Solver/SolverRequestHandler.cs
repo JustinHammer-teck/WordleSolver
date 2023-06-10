@@ -1,12 +1,13 @@
+using LanguageExt.Common;
 using Mediator;
 using WordleSolver.Application.Solver.Models;
 
 namespace WordleSolver.Application.Solver;
 
-public class SolverRequestHandler : IRequestHandler<SolverRequest, WordleStageDto>
+public class SolverRequestHandler : IRequestHandler<SolverRequest, Result<WordleStageDto>>
 {
-    public ValueTask<WordleStageDto> Handle(SolverRequest request, CancellationToken cancellationToken)
+    public async ValueTask<Result<WordleStageDto>> Handle(SolverRequest request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return new Result<WordleStageDto>();
     }
 }
