@@ -12,6 +12,7 @@ public class SolverRequestValidation : AbstractValidator<WordFrame>
 
     private bool BeAValidWord(string word)
     {
+        
         return true;
     }
 }
