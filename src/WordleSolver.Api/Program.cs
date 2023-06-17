@@ -1,4 +1,6 @@
+using Microsoft.Extensions.FileProviders;
 using WordleSolver.Application;
+using Mediator;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,12 +15,20 @@ builder.Services.AddMediator();
 
 var app = builder.Build();
 
+Console.WriteLine($"ContentRoot Path: {builder.Environment.ContentRootPath}");
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseStaticFiles(new StaticFileOptions 
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(app.Environment.ContentRootPath, "Resources"))
+});
 
 app.UseHttpsRedirection();
 

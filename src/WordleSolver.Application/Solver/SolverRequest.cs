@@ -7,5 +7,8 @@ namespace WordleSolver.Application.Solver;
 
 public record SolverRequest(
     WordFrame CurrentStage,
-    int Row, 
-    IEnumerable<WordFrame> WordleStage) : IRequest<Result<WordleStageDto>> {}
+    int Row,
+    IEnumerable<WordFrame> WordleStage) : IRequest<Result<WordleStageDto>>
+{
+    
+}
