@@ -11,7 +11,6 @@ public class SolverRequestValidation : AbstractValidator<SolverRequest>
 
     private bool BeAValidWord(string word)
     {
-        
         return true;
     }
 }
